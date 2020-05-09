@@ -1,5 +1,8 @@
 body {
-  color: #333333;
+  background-image: url(https://www.myjewishlearning.com/wp-content/uploads/2003/09/iStock-175249365-1350x900.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
   font-family: Arial;
   max-width: 650px;
   margin: 0 auto;
@@ -13,8 +16,8 @@ body {
 }
 
 footer {
-  color: #888888;
-  border-top: 1px solid #eeeeee;  
+  color: black;
+  border-top: 1px solid black;  
   margin-top: 16px;
   padding: 16px 0px;
 }
@@ -30,7 +33,9 @@ h1 {
 }
 
 header a {
-  color: #888888;
+  font-weight: bold;
+  font-size: large;
+  color: black;
   margin-right: 16px;
   text-decoration: none;
 }
@@ -51,4 +56,14 @@ button {
   background: #888888;
   color : white;
   padding: 8px;
+}
+.intro {
+  font-size: medium;
+  font-weight: 700;
+}
+h4 {
+font-weight: 700;
+}
+p{
+  font-weight: 700;
 }

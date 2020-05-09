@@ -27,13 +27,6 @@ app.get('/about',(req,res)=>{
   })
 })
 
-app.get('/help',(req,res)=>{
-  res.render('help',{
-    title:'All Weather',
-    name:'Yogesh'
-  })
-})
-
 app.get('', (req, res) => {
   res.render('index',{
     title:'All Weather',
@@ -56,7 +49,10 @@ app.get('/weather',(req, res)=>{
         return console.log("error", error)
      }  
      res.send({
-      forecast: forecastData,
+      forecast: forecastData[1],
+      temp: forecastData[2],
+      aqi : forecastData[3],
+      pre: forecastData[4],
       location : loc
     })
     })
@@ -76,7 +72,7 @@ app.get('/products',(req,res) =>{
 
 app.get('*', (req,res)=>{
   res.render('404',{
-    title:'weather app',
+    title:'All Weather',
     name:'Yogesh',
     errs:'Not found'
   })
